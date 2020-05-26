@@ -1,4 +1,4 @@
-package main
+package supervisord
 
 import (
 	"bufio"
@@ -31,7 +31,7 @@ func init() {
 	log.SetLevel(log.DebugLevel)
 }
 
-func initSignals(s *Supervisor) {
+func InitSignals(s *Supervisor) {
 	sigs := make(chan os.Signal, 1)
 	signal.Notify(sigs, syscall.SIGINT, syscall.SIGTERM)
 	go func() {
@@ -122,7 +122,7 @@ func runServer() {
 	for true {
 		options.Configuration, _ = findSupervisordConf()
 		s := NewSupervisor(options.Configuration)
-		initSignals(s)
+		InitSignals(s)
 		if _, _, _, sErr := s.Reload(); sErr != nil {
 			panic(sErr)
 		}

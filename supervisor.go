@@ -1,21 +1,21 @@
-package main
+package supervisord
 
 import (
 	"fmt"
-	"github.com/ochinchina/supervisord/config"
+	"github.com/nknorg/supervisord/config"
 	"net/http"
 	"os"
 	"strings"
 	"sync"
 	"time"
 
-	"github.com/ochinchina/supervisord/events"
-	"github.com/ochinchina/supervisord/faults"
-	"github.com/ochinchina/supervisord/logger"
-	"github.com/ochinchina/supervisord/process"
-	"github.com/ochinchina/supervisord/signals"
-	"github.com/ochinchina/supervisord/types"
-	"github.com/ochinchina/supervisord/util"
+	"github.com/nknorg/supervisord/events"
+	"github.com/nknorg/supervisord/faults"
+	"github.com/nknorg/supervisord/logger"
+	"github.com/nknorg/supervisord/process"
+	"github.com/nknorg/supervisord/signals"
+	"github.com/nknorg/supervisord/types"
+	"github.com/nknorg/supervisord/util"
 
 	log "github.com/sirupsen/logrus"
 )

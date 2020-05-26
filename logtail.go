@@ -1,8 +1,8 @@
-package main
+package supervisord
 
 import (
 	"github.com/gorilla/mux"
-	logger "github.com/ochinchina/supervisord/logger"
+	logger "github.com/nknorg/supervisord/logger"
 	"net/http"
 )
 

@@ -1,4 +1,4 @@
-[![Go Report Card](https://goreportcard.com/badge/github.com/ochinchina/supervisord)](https://goreportcard.com/report/github.com/ochinchina/supervisord)
+[![Go Report Card](https://goreportcard.com/badge/github.com/nknorg/supervisord)](https://goreportcard.com/report/github.com/nknorg/supervisord)
 
 # Why this project?
 
@@ -229,7 +229,7 @@ stdout_logfile = test.log, /dev/stdout
 
 This supervisord has a default web GUI, you can start, stop & check the status of program from the GUI. Following picture shows the default web GUI:
 
-![alt text](https://github.com/ochinchina/supervisord/blob/master/go_supervisord_gui.png)
+![alt text](https://github.com/nknorg/supervisord/blob/master/go_supervisord_gui.png)
 
 # Usage from a Docker container
 

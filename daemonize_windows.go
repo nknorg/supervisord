@@ -1,6 +1,6 @@
 // +build windows
 
-package main
+package supervisord
 
 func Deamonize(proc func()) {
 	proc()

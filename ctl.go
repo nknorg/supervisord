@@ -1,11 +1,11 @@
-package main
+package supervisord
 
 import (
 	"fmt"
 	"github.com/jessevdk/go-flags"
-	"github.com/ochinchina/supervisord/config"
-	"github.com/ochinchina/supervisord/types"
-	"github.com/ochinchina/supervisord/xmlrpcclient"
+	"github.com/nknorg/supervisord/config"
+	"github.com/nknorg/supervisord/types"
+	"github.com/nknorg/supervisord/xmlrpcclient"
 	"net/http"
 	"os"
 	"strings"

@@ -1,6 +1,6 @@
 // +build !windows
 
-package main
+package supervisord
 
 import (
 	daemon "github.com/ochinchina/go-daemon"
